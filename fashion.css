@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --darkOne: #191919;
+    --lightOne: #E6E6E6;
+    --bgc: #F4A950;
+    --redColor: rgb(224, 1, 1);
+    --mainFont: sans-serif;
+}
+
+body {
+    background-color: var(--lightOne);
+    color: var(--darkOne);
+    font-family: var(--mainFont);
+}
+
+
+nav {
+    display: flex;
+    background-color: var(--darkOne);
+    color: var(--lightOne);
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 7.5rem;
+}
+
+.margin {
+    padding: 0rem 3.5rem 0rem 3.5rem;
+}
+
+
+.logo {
+    font-size: 30px;
+    color: var(--bgc);
+    font-family: fantasy;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 3.5rem;
+}
+
+nav ul li a {
+    color: var(--lightOne);
+    text-decoration: none;
+    font-family: var(--mainFont);
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.platform {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Vector\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.leftContent {
+    /* display: grid; */
+    width: 23.5rem;
+    place-items: center;
+} 
+
+.leftContent h1 {
+    padding: 0rem 0rem 0rem 0rem;
+    line-height: 50px;
+}
+
+.leftContent p {
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.rightContent img {
+    position: relative;
+}
+
+.leftContent button {
+    margin-top: 2rem;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+button {
+    background-color: var(--darkOne);
+    color: var(--lightOne);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 1rem 3.5rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.subContent {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.circle  img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
