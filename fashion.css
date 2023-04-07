@@ -15,6 +15,7 @@ body {
     background-color: var(--lightOne);
     color: var(--darkOne);
     font-family: var(--mainFont);
+    overflow-x: hidden;
 }
 
 
@@ -119,19 +120,39 @@ button {
     outline: none;
     cursor: pointer;
 }
-.subContent {
+
+
+
+ /*start of subContent section */
+
+ .subContent {
+    position: relative;
     display: grid;
     justify-content: center;
+    margin-top: -7.5rem;
     align-items: center;
     text-align: center;
 }
+
+.subContent h1 {
+    line-height: 50px;
+    padding-bottom: 2rem;
+}
+
+.subContent .pp {
+    font-size: 25px;
+    /* width: 60rem; */
+}
+
 .flex {
+    margin: 3.5rem 0rem 0rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .circle {
+
     width: 10rem;
     justify-content: center;
     align-items: center;
@@ -142,5 +163,148 @@ button {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
+    margin-bottom: 1rem
+}
+ /*start of subContent section */
+/* 
+ cards design */
+ .cards {
+    display: flex;
+    gap: 2rem;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .card h2 {
+    padding: 1rem 0rem;
+ }
+
+ /* 
+ end of cards design */
+
+ /*start of view gallery section */
+
+ .viewGal {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem;
+ }
+
+ .viewGal p {
+    padding: 1.5rem;
+    font-size: 25px;
+    font-weight: 600;
+    
+ }
+
+ .viewGal button {
+    display: grid;
+    place-self: center;
+    font-size: 20px;
+    font-weight: 600;
+    width: 25rem;
+ }
+
+  /*end of view gallery section */
+
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: var(--darkOne);
+    color: var(--lightOne);
 }
 
+.date {
+    color: var(--lightOne);
+}
+
+footer .copy {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--lightOne);
+    text-align: center;
+}
+
+hr {
+    width: 100vw;
+
+}
+
+.footerContent {
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: 35% 15% 15% 15% 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.hh {
+    padding-bottom: 1.5rem;
+}
+
+.section  p {
+    font-weight: 500;
+}
+
+.section ul {
+    list-style: none;
+}
+
+.section ul li {
+    padding-top: 1.5rem;
+}
+
+.section ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--lightOne);
+    
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.section input {
+    border: 0;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    height: 2.5rem;
+    width: 18rem;
+    text-indent: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.section button {
+    padding: 0rem;
+    border: 0;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    margin: 0rem;
+    width: 7.5rem;
+    height: 2.5rem;
+    font-weight: 600;
+    background-color: var(--redColor);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-indent: 0px;
+}
